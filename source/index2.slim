@@ -10,10 +10,10 @@ html lang="ja"
     script type="text/javascript" src="/javascripts/site.js"
   body
     .background
-      .image style="background-image: url(/images/bg1.jpg);"
+      .image style="background-image: url(#{image_path('bg1.jpg')});"
         p.bg_info
           | 6本の向日葵(4号)／歌川正国（五井野正）
-      .image style="background-image: url(/images/bg2.jpg);"
+      .image style="background-image: url(#{image_path('bg2.jpg')});"
         p.bg_info
           | 泉水舟乗初 (Ka0006)／歌川国芳
     .contents
@@ -21,7 +21,7 @@ html lang="ja"
         .previous
           = image_tag "previous.png", alt: "previous"
         .next
-          = image_tag "/images/next.png", alt: "next"
+          = image_tag "next.png", alt: "next"
       .controls
         ul
           li
@@ -32,73 +32,38 @@ html lang="ja"
               | ログイン
       .header
         h1
-          = image_tag "/images/logo.png", alt: "株式会社ART MEDIA"
+          = image_tag "logo.png", alt: "株式会社ART MEDIA"
         p.lead
           | 五井野正 画伯の絵画や浮世絵の販売と講演の企画を行っています。
       .main_left
         .news
           h2
-            = image_tag "/images/news.png", alt: "NEWS"
+            = image_tag "news.png", alt: "NEWS"
           ul
-            li
-              | 11月10日(日) 五井野正 博士京都芸術講座）
-            li
-              | 10月12日(土) 五井野正 博士東京講演会
-            li
-              | 9月29日(日) 五井野正 博士 講演会（於：博多）
+            - data.meta.news.each do |s|
+             li = s
         .info
           h2
-            = image_tag "/images/info.png", alt: "INFO"
+            = image_tag "info.png", alt: "INFO"
           ul
-            li
-              | 「七次元よりの使者」が読めるサイト(順次掲載中)
-            li
-              | 「一念三千論」が読めるサイト(ウイッピー創刊号より)
-            li
-              | 【動画】五井野正博士が米国で開催された世界医学学会で招待講演
-            li
-              | 【動画】米国で開催された医学学会パーティーでの五井野正博士のダンス
-            li
-              | 2013年カレンダーをゴッホが愛した歌川派（浮世絵）美術館にて販売しております。
+            - data.meta.info.each do |s|
+             li = s
         .contact
           ul.social
             li
               = link_to "#" do
-                = image_tag "/images/facebook.png", alt: "Facebook"
+                = image_tag "facebook.png", alt: "Facebook"
             li
               = link_to "#" do
-                = image_tag "/images/twitter.png", alt: "Twitter"
+                = image_tag "twitter.png", alt: "Twitter"
           p
-            | <= image_tag "/images/phone.png", alt: "PHONE:0261-85-0867"
+            = image_tag "phone.png", alt: "PHONE:0261-85-0867"
       .main_right
         ul
-          li
-            = link_to "/art.html" do
-              = image_tag "/images/art.png", alt: "ART"
-          li
-            = link_to "/event.html" do
-              = image_tag "/images/event.png", alt: "EVENT"
-          li
-            = link_to "/books.html" do
-              = image_tag "/images/books.png", alt: "BOOKS"
-          li
-            = link_to "/shopping.html" do
-              = image_tag "/images/shopping.png", alt: "SHOPPING"
-          li
-            = link_to "/about_us.html" do
-              = image_tag "/images/about_us.png", alt: "ABOUT US"
-          li
-            = link_to "/shop_list.html" do
-              = image_tag "/images/shop_list.png", alt: "SHOP LIST"
-          li
-            = link_to "/link.html" do
-              = image_tag "/images/link.png", alt: "LINK"
-          li
-            = link_to "/blog.html" do
-              = image_tag "/images/blog.png", alt: "BLOG"
-          li
-            = link_to "/contact.html" do
-              = image_tag "/images/contact.png", alt: "CONTACT"
+          - data.pages.contents.each do |p|
+            li
+              = link_to "/#{p}.html" do
+                = image_tag "#{p}.png", alt: p.gsub(/_/, " ").capitalize
       .footer
         p.left Copyright(C) 2013 ART MEDIA Co.,Ltd. All Rights Reserved.
         p.right 古物営業法の規定に基づく表示　1.株式会社アートメディア　2.長野県公安委員会　3.第481341300003号

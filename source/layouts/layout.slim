@@ -37,13 +37,23 @@ html lang="ja"
         .inner
           .left
             ul.navigation
-              - (data.pages.content_pages + data.pages.optional_pages).each do |p|
+              - data.pages.contents.each do |p|
                 li
                   = link_to "/#{p}.html" do
                     - if page_classes.include? p
                       = image_tag "main_nav_#{p}_on.png", alt: p.gsub(/_/, " ").capitalize
                     - else
                       = image_tag "main_nav_#{p}.png", alt: p.gsub(/_/, " ").capitalize
+              li
+                = image_tag "main_nav_hr.png", alt: ""
+              - data.pages.optional.each do |p|
+                li
+                  = link_to "/#{p}.html" do
+                    - if page_classes.include? p
+                      = image_tag "main_nav_#{p}_on.png", alt: p.gsub(/_/, " ").capitalize
+                    - else
+                      = image_tag "main_nav_#{p}.png", alt: p.gsub(/_/, " ").capitalize
+
           .right
             == yield
       .footer
@@ -53,7 +63,7 @@ html lang="ja"
               li
                 = link_to "/index2.html" do
                   = image_tag "footer_home.png", alt: "Home"
-              - (data.pages.optional_pages + data.pages.content_pages).each do |p|
+              - (data.pages.optional + data.pages.contents).each do |p|
                 li
                   = link_to "/#{p}.html" do
                     = image_tag "footer_#{p}.png", alt: p.gsub(/_/, " ").capitalize

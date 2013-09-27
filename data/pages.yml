@@ -1,4 +1,4 @@
-content_pages:
+contents:
   - art
   - event
   - books
@@ -9,6 +9,6 @@ content_pages:
   - blog
   - contact
 
-optional_pages:
+optional:
   - news
   - info
