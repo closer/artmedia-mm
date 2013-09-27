@@ -1,0 +1,173 @@
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background: #000;
+  color: #FFF;
+  font-size: 9px;
+}
+a {
+  color: #FFF;
+}
+.background {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+.background .image {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-size: contain;
+}
+.background .bg_info {
+  position: absolute;
+  right: 5px;
+  bottom: 25px;
+  font-size: 9px;
+}
+
+.background-controls {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+.background-controls .previous {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  margin-top: -15px;
+}
+.background-controls .previous img {
+  cursor: pointer;
+}
+.background-controls .next {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  margin-top: -15px;
+}
+.background-controls .next img {
+  cursor: pointer;
+}
+
+.contents {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.contents .controls {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.contents .controls ul {
+}
+.contents .controls ul li {
+  float: left;
+  margin: 0 5px;
+}
+.contents .controls ul li a {
+  text-decoration: none;
+  width: 80px;
+  padding: 8px 20px;
+  font-size: 9px;
+  background: #c99e19;
+}
+
+.contents .header {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.contents .main_left {
+  position: absolute;
+  top: 30%;
+  left: 30px;
+  width: 37%;
+}
+.contents .main_left .news {
+  margin: 0 0 40px;
+}
+.contents .main_left .news ul {
+}
+.contents .main_left .news ul li {
+  padding: 3px 0;
+  border-bottom: dotted 1px #ffffff;
+}
+.contents .main_left .info {
+  margin: 0 0 40px;
+}
+.contents .main_left .info ul {
+}
+.contents .main_left .info ul li {
+  padding: 3px 0;
+  border-bottom: dotted 1px #ffffff;
+}
+.contents .main_left .contact {
+}
+.contents .main_left .contact ul.social {
+  overflow: hidden;
+}
+.contents .main_left .contact ul.social li {
+  float: left;
+  margin-right: 5px;
+}
+
+.contents .main_right {
+  position: absolute;
+  top: 120px;
+  right: 40px;
+  width: 25%;
+}
+.contents .main_right ul {
+}
+.contents .main_right ul li {
+  margin-bottom: 3%;
+}
+
+.contents .footer {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  font-size: 9px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.contents .footer .left {
+  float: left;
+  padding: 5px;
+}
+.contents .footer .right {
+  float: right;
+  padding: 5px;
+}
+
+.frontcover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(/images/frontcover.jpg) center center no-repeat #fff;
+  background-size: cover;
+}
+.frontcover a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

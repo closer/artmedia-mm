@@ -1,0 +1,14 @@
+content_pages:
+  - art
+  - event
+  - books
+  - shopping
+  - about_us
+  - shop_list
+  - link
+  - blog
+  - contact
+
+optional_pages:
+  - news
+  - info
