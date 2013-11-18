@@ -1,0 +1,261 @@
+@charset "utf-8";
+/*すべての属性に適用する場合*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+/* CSS Document */
+body {
+	height: auto;
+	width: 986px;
+	padding: 0px;
+	background-color: #FFFFFF;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	background-image: url(images/4-04.png);
+	background-repeat: repeat;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+h1{
+	font-family: "ＭＳ Ｐ明朝", "細明朝体", "ヒラギノ明朝 Pro W3";
+	font-size: 140%;
+	font-style: normal;
+	line-height: 1.3em;
+	font-weight: bold;
+	font-variant: normal;
+	color: #006666;
+	letter-spacing: normal;
+	word-spacing: normal;
+}
+h2{
+	font-family: "ＭＳ Ｐ明朝", "細明朝体", "ヒラギノ明朝 Pro W3";
+	font-size: 120%;
+	font-style: normal;
+	line-height: 1.3em;
+	font-weight: 700;
+	font-variant: normal;
+	color: #0033FF;
+	letter-spacing: normal;
+	word-spacing: normal;
+}
+h3{
+	font-family: "ＭＳ ゴシック", "Osaka－等幅";
+	font-size: 110%;
+	font-style: normal;
+	font-weight: bolder;
+	font-variant: normal;
+	color: #003399;
+}
+#logoarea {
+	height: 150px;
+	width: 986px;
+	background-color: #000066;
+	margin: 0px;
+	vertical-align: middle;
+	background-image: url(images/logoback.png);
+	
+}
+#gauid {
+	background-color: #999933;
+	height: 40px;
+	width: 986px;
+	overflow: hidden;
+	display: inline-block;
+	padding: 0px;
+	text-align: left;
+	vertical-align: middle;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	text-indent: 0px;
+}
+#catch {
+	height: 201px;
+	width: 986px;
+	background-color: #000066;
+}
+
+#main {
+	height: 1187px;
+	width: 986px;
+	background-color: #000066;
+	background-attachment: scroll;
+	background-image: url(images/mainback.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#footer {
+	height: 35px;
+	width: 986px;
+	margin: 0px;
+	background-color: #996633;
+	vertical-align: middle;
+	font-family: "Courier New", Courier, mono;
+	font-size: 80%;
+	font-style: italic;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	display: block;
+	text-align: center;
+	padding-top: 5px;
+}
+#article{
+	height: 1500px;
+	width: 986px;
+	background-color: #003333;
+	font-family: "ＭＳ Ｐ明朝", "細明朝体", "ヒラギノ明朝 Pro W3";
+	font-size: 100%;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 1.5em;
+	color: #000033;
+	letter-spacing: 0.2em;
+	text-align: left;
+	text-indent: 10px;
+	overflow: auto;
+	background-image: url(images/1-23.png);
+	background-repeat: repeat;
+}
+.logoimage{
+	margin-top: 12px;
+	margin-left: 20px;
+}
+.tunguy{
+	margin-left: 20px;
+}
+.caption{
+	font-family: "ＭＳ Ｐ明朝", "細明朝体", "ヒラギノ明朝 Pro W3";
+	font-size: 80%;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #333333;
+	line-height: 1.1em;
+}
+.guidtable{
+	margin: 0px;
+	padding: 0px;
+	border-top-style: 0;
+	border-right-style: 0;
+	border-bottom-style: 0;
+	border-left-style: 0;
+	width: 980px;
+}
+
+.td1{
+	font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	font-size: 100%;
+	font-style: normal;
+	font-weight: 400;
+	color: #FFFF66;
+	padding-right: 10px;
+	padding-left: 10px;
+	background-color: #660099;
+}
+.td2{
+	font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	font-size: 80%;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.1em;
+}
+.td3{
+	font-family: "ＭＳ Ｐ明朝", "細明朝体", "ヒラギノ明朝 Pro W3";
+	font-size: 90%;
+	font-style: normal;
+	line-height: 1.5em;
+	font-weight: normal;
+	font-variant: normal;
+	color: #003300;
+	letter-spacing: 0.3em;
+	display: block;
+	vertical-align: baseline;
+}
+.td4{
+	font-family: "ＭＳ Ｐ明朝", "細明朝体", "ヒラギノ明朝 Pro W3";
+	font-size: 100%;
+	font-style: normal;
+	line-height: 1.5em;
+	font-weight: 400;
+	font-variant: normal;
+	color: #333333;
+	letter-spacing: 0.3em;
+}
+.botn{
+	margin-right: 10px;
+}
+.table1{
+	background-image: url(images/guid1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 960px;
+	height: 600px;
+	margin: 20px;
+}
+.table2{
+	background-image: url(images/guid2.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 960px;
+	height: 600px;
+	margin: 20px;
+}
+.book{
+	margin: 0px;
+	padding: 0px;
+	height: 150px;
+	overflow: visible;
+	background-color: #FFFFFF;
+	width: 902px;
+}
+.td5{
+	height: 150px;
+	overflow: visible;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 30px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+.sp{
+	margin-bottom: 0px;
+	overflow: hidden;
+	border-bottom-color: #FFFFFF;
+	padding-bottom: 0px;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 508px;
+}
+.sp1{
+	margin-right: auto;
+	margin-left: 30px;
+}
+.sp2{
+}
+.chabar{
+	background-attachment: scroll;
+	background-image: url(images/chabar.png);
+	background-repeat: repeat-x;
+	background-position: center center;
+	background-color: #00CC00;
+	height: 25px;
+	width: 100%;
+}
+.guidtable1{
+	margin-top: 20px;
+}

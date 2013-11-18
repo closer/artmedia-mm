@@ -60,9 +60,9 @@ html lang="ja"
             = image_tag "phone.png", alt: "PHONE:0261-85-0867"
       .main_right
         ul
-          - data.pages.contents.each do |p|
+          - data.pages.contents.each do |p, url|
             li
-              = link_to "/#{p}.html" do
+              = link_to (url || "/#{p}.html") do
                 = image_tag "#{p}.png", alt: p.gsub(/_/, " ").capitalize
       .footer
         p.left Copyright(C) 2013 ART MEDIA Co.,Ltd. All Rights Reserved.
