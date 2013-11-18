@@ -62,7 +62,7 @@ html lang="ja"
         ul
           - data.pages.contents.each do |p, url|
             li
-              = link_to (url || "/#{p}.html") do
+              = link_to (url || "/#{p}.html"), target: (url ? '_blank' : '_self') do
                 = image_tag "#{p}.png", alt: p.gsub(/_/, " ").capitalize
       .footer
         p.left Copyright(C) 2013 ART MEDIA Co.,Ltd. All Rights Reserved.
