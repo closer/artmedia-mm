@@ -38,12 +38,13 @@ html lang="ja"
           .left
             ul.navigation
               - data.pages.contents.each do |p, url|
-                li
-                  = link_to (url || "/#{p}.html") do
-                    - if page_classes.include? p
-                      = image_tag "main_nav_#{p}_on.png", alt: p.gsub(/_/, " ").capitalize
-                    - else
-                      = image_tag "main_nav_#{p}.png", alt: p.gsub(/_/, " ").capitalize
+                - unless url
+                  li
+                    = link_to (url || "/#{p}.html") do
+                      - if page_classes.include? p
+                        = image_tag "main_nav_#{p}_on.png", alt: p.gsub(/_/, " ").capitalize
+                      - else
+                        = image_tag "main_nav_#{p}.png", alt: p.gsub(/_/, " ").capitalize
               li
                 = image_tag "main_nav_hr.png", alt: ""
               - data.pages.optional.each do |p|
@@ -64,9 +65,10 @@ html lang="ja"
                 = link_to "/index2.html" do
                   = image_tag "footer_home.png", alt: "Home"
               - (data.pages.optional + data.pages.contents).each do |p, url|
-                li
-                  = link_to (url || "/#{p}.html") do
-                    = image_tag "footer_#{p}.png", alt: p.gsub(/_/, " ").capitalize
+                - unless url
+                  li
+                    = link_to (url || "/#{p}.html") do
+                      = image_tag "footer_#{p}.png", alt: p.gsub(/_/, " ").capitalize
         .bottom
           .inner
             .copy
