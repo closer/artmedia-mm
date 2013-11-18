@@ -9,6 +9,7 @@ $ ->
     console.log current
     current_image = $(images.get(current))
     background.append(current_image.css('opacity', 0).animate({opacity: 1}, 500))
+    false
 
   previous = ()->
     current =
@@ -28,6 +29,8 @@ $ ->
 
   $('.previous').click(previous)
   $('.next').click(next)
+
+  false
 
   # setInterval(function() {
   #   next()

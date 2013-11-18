@@ -57,3 +57,17 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket                     = 'artmedia-staging'
+  s3_sync.region                     = 'ap-northeast-1'
+  s3_sync.aws_access_key_id          = ENV['AWS_ACCESS_KEY_ID']
+  s3_sync.aws_secret_access_key      = ENV['AWS_SECRET_ACCESS_KEY']
+  s3_sync.delete                     = false
+  s3_sync.after_build                = false
+  s3_sync.prefer_gzip                = true
+  s3_sync.path_style                 = true
+  s3_sync.reduced_redundancy_storage = false
+  s3_sync.acl                        = 'public-read'
+  s3_sync.encryption                 = false
+end
