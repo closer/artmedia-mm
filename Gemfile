@@ -2,6 +2,8 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
+gem "dotenv"
+
 gem "middleman", "~>3.1.5"
 
 gem "slim"

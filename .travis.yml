@@ -6,6 +6,4 @@ before_script:
 script: bundle exec middleman build
 after_script: bundle exec middleman s3_sync --force
 env:
-  global:
-  - secure: cktLUG+N/0re49SlUTbSI0mb6IdyaX5DZRSTtyJ7TtJt31dLeM9ioFrUgd5DHEau5q3uH0aOZPB/ef0gPYyaS8A4ndrD6nALTEizdcA9yM+VrKwN8n3FIzVQVtZFxUwsq9TBes/YtIsuQ6QkwQGNAoXIbP1pooHRmG91JPIz53E=
-  - secure: jKH8Rt/niz+Q0kQiI9ltjHHuUGx8z5AOJYrATNeC8xce5fFdKXiLDJBNTf+0F3gzZVmdu27/un5jq+RBBeXxLKBSSJVMZ/8YG4LT8kZKtKrIjj7x2dR3lEaSub990Uw+plvFluZxaMgkVIgGJMsbiTVdEG6goEmmtbnJ8MgNvRQ=
+  secure: p0ngxdqiCo2nM6Y5Zpka/UXlZiNYgVh1AJ1vAtwCoS1oGPU9zfeZMxzZDsc2AKTZioQ7Les87/hUSCjgy45YL8G78WKRBeDIKhyWDQ08PwxcwsQqvAu63H8TeKosSKAccwT25Y/xOtDHD/MyibVX3Z2n27XqF5nk4HKNbZSDK3c=
